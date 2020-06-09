@@ -1,9 +1,10 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #2A2B2DFF;
+  background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
+
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
@@ -11,26 +12,19 @@ body {
   border: 0;
 }
 
-img {
-   max-width: 100%;
-   max-height: 100%;
-   display: block;
-   border-radius:40px;
-}
-
-.logo-img {
-  width: 150px;        
-  height:150px;
-  padding: 10px;
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
 
 .navbar-brand {
   padding-top: 25px;
 }
-
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #2A2B2DFF;
+  color: #557c3e;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -38,39 +32,29 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  margin-top: 15px;
-  margin-bottom: 18px;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-
-.navbar-brand span { 
-  vertical-align: middle;
-  font-family: 'Lora', serif;
-  color: #2A2B2DFF;
-  font-size:.8em;
+.navbar-brand p { /* Kosher cert */
+  color: #000;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-left: 8px;
+  font-size: .7em;
   margin-top: 15px;
 }
-.cer-img{
-  width: 30px;        
-  height:30px;  
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
 }
 
 #nav-list {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #2A2B2DFF;
+  color: #951C49;
   text-align: center;
 }
 #nav-list a:hover {
-  background: #2A2B2DFF;
-  color:#f6b319;
-  border-radius: ;
+  background: #E7E7E7;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -84,40 +68,39 @@ img {
   padding-bottom: 0;
 }
 #phone div { /* We Deliver */
-  color: #2A2B2DFF;
+  color: #557c3e;
   text-align: right;
   padding-right: 15px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #2A2B2DFF;
+  border: 1px solid #61122f;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: ;
+  margin-top: -30px;
 }
+/* END HEADER */
 
 /* FOOTER */
 .panel-footer {
-  padding-top: 5px;
+  margin-top: 30px;
+  padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #2A2B2DFF;
-  color:#f6b319;
+  background-color: #222;
   border-top: 0;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address, #testimonials {
+#hours, #address {
   line-height: 2;
-  text-align: center;
 }
-#hours > span, #address > span, #testimonials >{
+#hours > span, #address > span {
   font-size: 1.3em;
-  text-align: center;
 }
 #address p {
-  color: white;
+  color: #557c3e;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -129,46 +112,40 @@ img {
 }
 /* END FOOTER */
 
+
+
 /* HOME PAGE */
 .container .jumbotron {
-  box-shadow: 0 0 20px #f6b319;
-  border-radius: 50px;
-  border: 1px solid #f6b319;
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
 }
 
-#products, #offers, #map {
+#menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 1px solid #f6b319;
+  border: 2px solid #3F0C1F;
   overflow: hidden;
-  border-radius: 50px;
-
 }
-#products:hover, #offers:hover, #map:hover {
-  box-shadow: 0 1px 10px 1px #f6b319;
-  cursor: pointer;
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
-
-#products {
-  background: url('../images/products.jpg') no-repeat;
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
-  background-size: 100%;
 }
-#offers {
-  background: url('../images/offers.jpg') no-repeat;
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
-  background-size: 100%;
 }
-
-#products span, #offers span, #map span {
+#menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.6em;
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
@@ -179,11 +156,11 @@ img {
 /* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
+  border: 2px solid #3F0C1F;
   overflow: hidden;
   width: 200px;
   height: 200px;
   margin: 0 auto 15px;
-  border-radius: 40px;
 }
 .category-tile span {
   position: absolute;
@@ -191,23 +168,18 @@ img {
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 1em;
-  background-color: #f6b319;
-  color: #2A2B2DFF;
-  border-radius: 40px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
 }
 .category-tile:hover {
-  box-shadow: 0 1px 10px 1px #f6b319;
-  border-radius: 40px;
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#products-title + div {
+#menu-categories-title + div {
   margin-bottom: 50px;
-}
-
-#categories-title{
-  padding-bottom: 30px;
-  color:#f6b319;
 }
 /* END MENU CATEGORIES PAGE */
 
@@ -219,16 +191,17 @@ img {
   width: 80%;
 }
 .menu-item-tile .menu-item-price {
-  font-size: 0.9;
-  text-align: center;
+  font-size: 1.1em;
+  text-align: right;
   margin-top: -15px;
   margin-right: -15px;
 }
-
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
 .menu-item-photo {
   position: relative;
-  border: 3px solid #f6b319; 
-  border-radius: 45px;
+  border: 2px solid #3F0C1F; 
   overflow: hidden;
   padding: 0;
   margin-right: -15px;
@@ -236,31 +209,32 @@ img {
   margin-bottom: 20px;
   max-width: 250px;
 }
-
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
 .menu-item-description {
   padding-right: 30px;
-  color
 }
 h3.menu-item-title {
-  margin: 0 0 18px;
+  margin: 0 0 10px;
 }
 .menu-item-details {
   font-size: .9em;
   font-style: italic;
-}
-.menu-item-details span{
-  color:#f6b319;
-  margin-bottom: 5px;
 }
 /* END SINGLE CATEGORY PAGE */
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-.container .jumbotron {
-    background: url('../images/j.jpg') no-repeat;
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
-    
   }
 }
 
@@ -268,7 +242,7 @@ h3.menu-item-title {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/j.jpg') no-repeat;
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
     width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
@@ -277,7 +251,7 @@ h3.menu-item-title {
 
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/j.jpg') no-repeat;
+    background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -285,12 +259,12 @@ h3.menu-item-title {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
-   .container .jumbotron {
-    background: url('../images/j.jpg') no-repeat;
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
-
+  /* End Home Page */
 }
 
 /********** Extra small devices only **********/
@@ -305,12 +279,11 @@ h3.menu-item-title {
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
   .navbar-brand p { /* Kosher cert */
-    font-size: 3vw;
+    font-size: .6em;
     margin-top: 12px;
   }
   .navbar-brand p img { /* Star-K */
-    height: 23px;
-    width:23px;
+    height: 20px;
   }
 
   #collapsable-nav a { /* Collapsed nav menu text */
@@ -328,7 +301,7 @@ h3.menu-item-title {
     padding: 10px;
     border: 2px solid #fff;
     background-color: #f6b319;
-    color: #2A2B2DFF;
+    color: #951c49;
   }
   #xs-deliver {
     margin-top: 5px;
@@ -336,7 +309,7 @@ h3.menu-item-title {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-    /* End Header */
+  /* End Header */
 
   /* Footer */
   .panel-footer section {
@@ -352,35 +325,24 @@ h3.menu-item-title {
   /* End Footer */
 
   /* Home Page */
-    .container .jumbotron {
+  .container .jumbotron {
     margin-top: 30px;
     padding: 0;
-    }
-  #products, #offers {
+  }
+  #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
-    }
+  }
+
   .menu-item-photo {
     margin-right: auto;
-    }
-    .menu-item-tile .menu-item-price {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-right: 14px;
-    }
-    .menu-item-description {
-    text-align: center;
-    }
-    .menu-item-tile {
-    margin-top: 25px;
   }
-  .menu-item-title{
-  margin-right:   
+  .menu-item-tile .menu-item-price {
+    text-align: center;
   }
-  ul {
-    list-style-type: none;
-    margin-right: 40px;
-    }
+  .menu-item-description {
+    text-align: center;;
+  }
 }
 
 
@@ -394,7 +356,7 @@ h3.menu-item-title {
   /* End Header */
   
   /* Home page */
-  #products, #offers {
+  #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
